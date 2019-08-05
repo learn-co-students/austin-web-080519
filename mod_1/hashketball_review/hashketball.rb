@@ -122,10 +122,22 @@ end
 
 
 def num_points_scored(player_name)
-  # get a list of all the players
-  # find the player whose name matches the argument 'player_name'
-  # return that player's points 
+  home_team = game_hash[:home]
+  away_team = game_hash[:away]
+
+  home_team_players = home_team[:playrs]
+  away_team_players = away_team[:players]
+
+  alan_anderson = home_team_players[0]
+
+  alan_anderson_shoe_size = alan_anderson[:shoe]
+
+  puts alan_anderson_shoe_size
+
+  # binding.pry
 end
+
+# num_points_scored("Vanessa")
 
 
 # # EXERCISE:
@@ -152,13 +164,19 @@ end
 
 # # EXERCISE
 # # What do the following return?
-#
-# arr = (1..100).to_a
-#
-# arr.map do |num|
-#   num.even?
-# end
-#
-# arr.select do |num|
-#   7
-# end
+
+arr = (1..100).to_a
+
+
+# # MAP
+even_array = []
+arr.map do |num|
+  if num.even? 
+    even_array(num)
+  end 
+end
+
+# SELECT
+second_even_array = arr.select { |value| value.even? }
+
+puts second_even_array
