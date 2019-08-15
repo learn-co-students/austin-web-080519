@@ -22,3 +22,31 @@
 - class variables
 - self
 
+- One to Many relaationships
+- Many to Many through
+
+- SQL(sqlite)
+- CRUD
+  - Create (CREATE, INSERT)
+  - Read (SELECT)
+  - Update (UPDATE)
+  - Delete (DELETE, DROP)
+- Relationships between tables (JOINS)
+
+- ORM
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
