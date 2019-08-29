@@ -17,3 +17,14 @@ get '/books/:info'
 DONESIES
 
 As a site visitor, I should be able to see a form where I create a book. When I create a book I can associate it with an existing author.
+
+Make a link to create book form GOOD
+create the route GET '/books/new' GOOD
+create erb GOOD
+Create a POST form - make a book DONE
+    - title
+    - snippet
+    - authorid? - need a way to attach to Author DONE (via authorid)
+new route : POST '/books/new DONE
+redirect to specific book page
+DONESIES
