@@ -1,0 +1,9 @@
+<%= form_for @doctor do |f|%>
+    <%= f.label :name%>
+    <%= f.text_field :name%>
+    <%= f.submit%>
+<%end%>
+
+<%= form_tag("/doctors/#{@doctor.id}",method:"DELETE") do %>
+    <%= submit_tag "Delete doctor :("%>
+<% end %>
