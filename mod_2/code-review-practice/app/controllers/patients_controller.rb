@@ -12,6 +12,7 @@ class PatientsController < ApplicationController
 
     def create
         @patient = Patient.create(patient_params)
+        # byebug
         if @patient.valid?
             redirect_to patient_path(@patient)
         else

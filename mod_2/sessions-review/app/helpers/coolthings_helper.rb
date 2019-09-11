@@ -1,0 +1,2 @@
+module CoolthingsHelper
+end

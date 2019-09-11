@@ -1,4 +1,5 @@
 class Patient < ApplicationRecord
-    validates :name, uniqueness: true
     belongs_to :doctor
+    validates :name, length: { minimum:5 }
+    validates :age, numericality: {less_than: 50}
 end
