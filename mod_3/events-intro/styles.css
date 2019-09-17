@@ -35,13 +35,17 @@ html * {
 
 .btn {
   background-color: white;
-  border-radius: 0px 5px 5px 0px;
+  border-radius: 5px;
   border: 1px solid rgb(40, 160, 230);
   color: rgb(40, 160, 230);
   padding: 10px 20px;
   text-align: center;
   display: inline-block;
   font-size: 16px;
+}
+
+#comment-form .btn {
+  border-radius: 0px 5px 5px 0px;
 }
 
 .btn:hover {
